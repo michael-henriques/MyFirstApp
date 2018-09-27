@@ -26,5 +26,5 @@ deploy:
         tag: latest, 1.0
         username: $USERNAME
         password: $PASSWORD
-        registry: https://registry.hub.docker.com/v2
+        registry: https://registry.hub.docker.com
         entrypoint: "/pipeline/source/app/docker_entrypoint.sh"

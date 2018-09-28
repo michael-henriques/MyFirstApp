@@ -28,4 +28,4 @@ deploy:
         username: $USERNAME
         password: $PASSWORD
         registry: https://registry.hub.docker.com
-        entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
+        entrypoint: "/pipeline/source/docker_entrypoint.sh"

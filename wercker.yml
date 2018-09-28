@@ -33,4 +33,4 @@ deploy:
         username: $USERNAME
         password: $PASSWORD
         registry: https://registry.hub.docker.com
-        cmd: "dotnet /pipeline/source/app/MyFirstAspNetCoreApp/publish/MyFirstAspNetCoreApp.dll --server.urls=http://0.0.0.0:${PORT-"8080"}"
+        cmd: "bash /pipeline/source/app/docker_entrypoint.sh"

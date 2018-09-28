@@ -23,7 +23,7 @@ build:
         name: set shell as executable
         code: |
           cd $WERCKER_ROOT
-          chmod +x docker_entrypoint.sh
+          sudo chmod +x docker_entrypoint.sh
 deploy:
 
   steps:

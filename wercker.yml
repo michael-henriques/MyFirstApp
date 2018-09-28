@@ -27,4 +27,4 @@ deploy:
         username: $USERNAME
         password: $PASSWORD
         registry: https://registry.hub.docker.com
-        entrypoint: "/pipeline/source/MyFirstAspNetCoreApp/publish/MyFirstAspNetCoreApp.dll"
+        entrypoint: "/pipeline/output/app/MyFirstAspNetCoreApp.dll"

@@ -1,2 +1,2 @@
-cd /pipeline/source/app/publish
-dotnet MyFirstAspNetCoreApp.dll
+sudo cd /pipeline/source/app/publish
+sudo dotnet MyFirstAspNetCoreApp.dll

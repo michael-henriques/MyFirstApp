@@ -28,4 +28,4 @@ deploy:
         username: $USERNAME
         password: $PASSWORD
         registry: https://registry.hub.docker.com
-        entrypoint: "dotnet", "MyFirstAspNetCoreApp.dll"
+        cmd: "dotnet MyFirstAspNetCoreApp.dll"

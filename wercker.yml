@@ -19,6 +19,11 @@ build:
         code: |
           cp -r . $WERCKER_OUTPUT_DIR/app
           cd $WERCKER_OUTPUT_DIR/app
+    - script:
+        name: se shell as executable
+        code: |
+          cd $WERCKER_SOURCE_DIR/app
+          chmod +x docker_entrypoint.sh
 deploy:
 
   steps:

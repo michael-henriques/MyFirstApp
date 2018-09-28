@@ -17,7 +17,8 @@ build:
     - script:
         name: copy binary
         code: |
-          cp -r . $WERCKER_OUTPUT_DIR/app 
+          cp -r . $WERCKER_OUTPUT_DIR/app
+          cd $WERCKER_OUTPUT_DIR/app
 deploy:
 
   steps:
@@ -27,4 +28,4 @@ deploy:
         username: $USERNAME
         password: $PASSWORD
         registry: https://registry.hub.docker.com
-        entrypoint: "/pipeline/output/app/MyFirstAspNetCoreApp.dll"
+        entrypoint: "/pipeline/source/app/docker_entrypoint.sh"

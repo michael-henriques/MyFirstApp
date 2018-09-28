@@ -28,4 +28,5 @@ deploy:
         username: $USERNAME
         password: $PASSWORD
         registry: https://registry.hub.docker.com
-        entrypoint: "/pipeline/source/docker_entrypoint.sh"
+        cmd: "sudo chmod +x /pipeline/source/app/docker_entrypoint.sh"
+        entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
